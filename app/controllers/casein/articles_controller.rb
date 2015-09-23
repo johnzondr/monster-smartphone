@@ -59,7 +59,7 @@ module Casein
     private
       
       def article_params
-        params.require(:article).permit(:title, :text, :photo)
+        params.require(:article).permit(:title, :text, :photo, :blurb)
       end
 
   end
