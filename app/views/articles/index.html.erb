@@ -1,5 +1,7 @@
 <% @articles.each do |article| %>
 	<h2><%= article.title %></h2>
+	<b><%= article.created_at.strftime("%B %e, %Y") %></b>
 	<p><%= article.text.html_safe %></p>
 	<br>
+	<%= link_to "Read More", article_path(article) %>
 <% end %>
