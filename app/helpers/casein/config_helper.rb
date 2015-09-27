@@ -14,7 +14,7 @@ module Casein
     # The server hostname where Casein will run
     def casein_config_hostname
       if Rails.env.production?
-        link_to root_path
+        'https://www.scalemail.com'
       else
         'http://localhost:3030/'
       end
