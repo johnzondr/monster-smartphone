@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap.min
+ *= require_self
+ *= require_tree .
+ */
+
+$dark-blue: #0c1527;
+$light-blue: #0c2547;
+$border-styling: 1px solid $light-blue;
+$serif: "adobe-text-pro",serif;
+
+body {
+
+	background: url('background.png') no-repeat 50% 0;
+	background-color: #000;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display:inline;
+}
+
+li {
+	display: inline;
+}
+
+.left-menu {
+	float:left;
+}
+
+.right-menu {
+	float:right;
+}
+
+.nav-header {
+	overflow: hidden;
+}
+
+.navigation-wrapper {
+	height: 50px;
+	background-color: $dark-blue;
+}
+
+.hero-wrapper {
+	overflow: hidden;
+	text-align: center;
+}
+
+.img-wrapper {
+	height:50px;
+	width: 1000px;
+	overflow: hidden;
+}
+
+.main-wrapper {
+	padding: 50px 50px 50px 50px;
+	background-color: $dark-blue;
+	border: $border-styling;
+}
+
+.article {
+	padding-bottom: 25px;
+	border-bottom: $border-styling;
+	margin-bottom: 25px;
+	h3 {
+		color: #e0e0e0;
+		font-family: $serif;
+		font-weight: 300;
+		font-size: 18px;
+		margin-bottom: 2px;
+	}
+	.image-thumbnail {
+		height: 175px;
+		width: 260px;
+		overflow: hidden;
+	}
+	.date {
+		color: #6f6e6e;
+		margin-bottom: 18px;
+	}
+	.text {
+		color: #aeaeae;
+	}
+	.link {
+		margin-top: 10px;
+		float:right;
+	}
+}
+
+

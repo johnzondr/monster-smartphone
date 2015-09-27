@@ -5,12 +5,33 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <script src="https://use.typekit.net/qhw5xed.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 
-<ul>
-	<li><%=link_to "Home", root_path%></li>
-</ul>
+<div class="container">
+	<div class="nav-header">
+
+			<%= image_tag 'nav-header.png' %>
+
+	</div>
+	
+	<div class="navigation-wrapper">
+		<ul class="left-menu">
+			<li><%=link_to "Home", root_path%></li>
+			<li><%=link_to "Games", '#'%></li>
+			<li><%=link_to "Blog", '#'%></li>
+		</ul>
+
+		<ul class="right-menu">
+			<li><%=link_to "Store", '#'%></li>
+			<li><%=link_to "Contact Us", '#'%></li>
+		</ul>
+	</div>
+	
+
+</div>
 <%= yield %>
 
 </body>

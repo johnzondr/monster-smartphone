@@ -1,9 +1,31 @@
-<% @articles.each do |article| %>
-	<h2><%= article.title %></h2>
-	<b><%= article.created_at.strftime("%B %e, %Y") %></b>
-	<% if article.blurb %>
-		<p><%= article.blurb.html_safe %></p>
-	<% end %>
-	<br>
-	<%= link_to "Read More", article_path(article) %>
-<% end %>
+<div class="container">
+	<div class="hero-wrapper">
+			<%= image_tag 'hero/hero.png', class: 'center-block' %>
+	</div>
+
+	<div class="main-wrapper">
+		<% @articles.each do |article| %>
+			<div class="article">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="image-thumbnail">
+							<%= image_tag 'article-image.png' %>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="title"><%= article.title %></h3>
+						<p class="date"><%= article.created_at.strftime("%B %e, %Y") %></p>
+						<% if article.blurb %>
+							<p class="text"><%= article.blurb.html_safe %></p>
+						<% end %>
+						<%= link_to "Read More >>>", article_path(article), class: 'link' %>
+					</div>
+				</div>
+			</div>
+		<% end %>
+
+	</div>
+</div>
+
+
+
