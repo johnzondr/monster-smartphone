@@ -130,7 +130,7 @@ div.pagination {
 
 .article-main {
 	@extend %content-bg;
-	padding-bottom: 25px;
+	padding-bottom: 60px;
 	margin-bottom: 25px;
 	h2 {
 		font-family: $serif;
@@ -139,6 +139,7 @@ div.pagination {
 	}
 	p {
 		color: $text-color;
+		line-height: 1.5;
 	}
 }
 
