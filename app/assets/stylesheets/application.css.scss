@@ -16,22 +16,33 @@
 $dark-blue: #0c1527;
 $light-blue: #0c2547;
 $border-styling: 1px solid $light-blue;
-$serif: "adobe-text-pro",serif;
+$serif: "baskerville-urw",serif;
+%content-bg {
+	background-color: $dark-blue;
+	border: $border-styling;
+}
+$text-color: #aeaeae;
+$title-color: #e0e0e0;
 
 body {
 
 	background: url('background.png') no-repeat 50% 0;
 	background-color: #000;
 }
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display:inline;
-}
+.navigation-wrapper {
+	font-family: $serif;
 
-li {
-	display: inline;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display:inline;
+	}
+
+	li {
+		display: inline;
+	}
+
 }
 
 .left-menu {
@@ -63,9 +74,8 @@ li {
 }
 
 .main-wrapper {
+	@extend %content-bg;
 	padding: 50px 50px 20px 50px;
-	background-color: $dark-blue;
-	border: $border-styling;
 	margin-bottom: 20px;
 }
 
@@ -74,7 +84,7 @@ li {
 	border-bottom: $border-styling;
 	margin-bottom: 25px;
 	h3 {
-		color: #e0e0e0;
+		color: $title-color;
 		font-family: $serif;
 		font-weight: 300;
 		font-size: 18px;
@@ -90,7 +100,7 @@ li {
 		margin-bottom: 18px;
 	}
 	.text {
-		color: #aeaeae;
+		color: $text-color;
 	}
 	.link {
 		margin-top: 10px;
@@ -116,4 +126,24 @@ div.pagination {
 
 .pagination {
 	margin: 0;
+}
+
+.article-main {
+	@extend %content-bg;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	h2 {
+		font-family: $serif;
+		font-size: 45px;
+		color: $title-color;
+	}
+	p {
+		color: $text-color;
+	}
+}
+
+.image-wrapper {
+	margin-bottom: 40px;
+	height: 280px;
+	background-color: black;
 }
