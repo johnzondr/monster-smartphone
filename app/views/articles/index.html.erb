@@ -23,7 +23,21 @@
 				</div>
 			</div>
 		<% end %>
-
+		<div class="pagination">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<%= will_paginate @articles %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="row">
+			<div class= "col-md-12 text-center">
+				<h4>Copyright 2015 Scalemail. All rights Reserved.</h4>
+				<%= link_to 'Terms of Use', '#' %>
+			</div>
+		</div>
 	</div>
 </div>
 

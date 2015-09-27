@@ -63,9 +63,10 @@ li {
 }
 
 .main-wrapper {
-	padding: 50px 50px 50px 50px;
+	padding: 50px 50px 20px 50px;
 	background-color: $dark-blue;
 	border: $border-styling;
+	margin-bottom: 20px;
 }
 
 .article {
@@ -97,4 +98,22 @@ li {
 	}
 }
 
+.footer {
+	margin: 10px 0 20px;
+	h4 {
+		font-size: 12px;
+		margin: 5px 0 0px;
+	}
+	a {
+		font-size: 12px;
 
+	}
+}
+
+div.pagination {
+	display: block;
+}
+
+.pagination {
+	margin: 0;
+}
