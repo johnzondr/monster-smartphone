@@ -213,36 +213,6 @@ body {
 	left: 0px;
 }
 
-.article {
-	padding-bottom: 25px;
-	border-bottom: $border-styling;
-	margin-bottom: 25px;
-	h3 {
-		color: $title-color;
-		font-family: $serif;
-		font-weight: 300;
-		font-size: 18px;
-		margin-bottom: 2px;
-	}
-	.image-thumbnail {
-		height: 175px;
-		width: 260px;
-		overflow: hidden;
-	}
-	.date {
-		color: #6f6e6e;
-		margin-bottom: 18px;
-	}
-	.text {
-		color: $text-color;
-	}
-	.link {
-		margin-top: 10px;
-		float:right;
-		position: relative;
-		z-index: 999999;
-	}
-}
 
 .footer {
 	margin: 10px 0 20px;
