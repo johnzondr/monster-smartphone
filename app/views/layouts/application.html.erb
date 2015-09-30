@@ -11,23 +11,30 @@
 <body>
 
 <div class="container">
-	<div class="nav-header">
+<!-- 	<div class="nav-header">
 
 			<%= image_tag 'nav-header.png' %>
 
-	</div>
+	</div> -->
 	
-	<div class="navigation-wrapper">
-		<ul class="left-menu">
-			<li><%=link_to "Home", root_path%></li>
-			<li><%=link_to "Games", '#'%></li>
-			<li><%=link_to "Blog", '#'%></li>
-		</ul>
+	<div class="navigation-wrapper" id="primary_nav_wrap">
+		<div class="menu-wrapper">
+			<ul class="left-menu">
+				<li id="home"><%= link_to image_tag('home.png'), root_path %></li>
+				<li><%= link_to image_tag('games.png'), '#'%>
+					<ul>
+						<li><%=link_to 'item 1', '#' %></li>
+						<li><%= link_to 'item 2', '#' %></li>
+					</ul>
+				</li>
+				<li><%= link_to image_tag('blog.png'), '#'%>
+			</ul>
 
-		<ul class="right-menu">
-			<li><%=link_to "Store", '#'%></li>
-			<li><%=link_to "Contact Us", '#'%></li>
-		</ul>
+			<ul class="right-menu">
+				<li><%= link_to image_tag('store.png'), '#'%></li>
+				<li><%= link_to image_tag('contact.png'), '#'%></li>
+			</ul>
+		</div>
 	</div>
 	
 
