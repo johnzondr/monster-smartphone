@@ -9,7 +9,7 @@
 		</tr>
 	</thead>
 	
-	<% articles.each do |article| %>
+	<% articles.order("created_at desc").each do |article| %>
 		<tr>
 			<td><%= casein_table_cell_link article.title, casein_article_path(article) %></td>
 			<td><%= casein_table_cell_link article.blurb, casein_article_path(article) %></td>
