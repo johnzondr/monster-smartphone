@@ -210,7 +210,7 @@ body {
 	position: absolute;
 	// bottom: 5px;
 	bottom: 39px;
-	left: -2px;
+	left: 0px;
 }
 
 .article {
@@ -267,12 +267,14 @@ div.pagination {
 .main-wrapper .pagination {
 	position: relative;
 	z-index: 99999;
+		background-color: transparent !important;
+	border: none !important;
 }
 
 .article-main {
 	@extend %content-bg;
 	padding-bottom: 60px;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
 	h2 {
 		font-family: $serif;
 		font-size: 45px;
@@ -290,4 +292,12 @@ div.pagination {
 	background-color: black;
 }
 
+.pagination>li>a {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
 
