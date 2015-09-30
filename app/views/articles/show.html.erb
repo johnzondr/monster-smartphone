@@ -5,7 +5,9 @@
 	<div class="article-main">
 		<div class="row">
 			<div class="col-md-2">
-				<b><%= @article.created_at.strftime("%B %e, %Y") %></b>
+				<div class="date">
+					<b><%= @article.created_at.strftime("%b %e") %></b>
+				</div>
 			</div>
 			<div class="col-md-9">
 				<h2><%= @article.title %></h2>
