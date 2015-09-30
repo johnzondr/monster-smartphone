@@ -241,6 +241,37 @@ div.pagination {
 	border: none !important;
 }
 
+.article {
+	padding-bottom: 25px;
+	border-bottom: $border-styling;
+	margin-bottom: 25px;
+	h3 {
+		color: $title-color;
+		font-family: $serif;
+		font-weight: 300;
+		font-size: 18px;
+		margin-bottom: 2px;
+	}
+	.image-thumbnail {
+		height: 175px;
+		width: 260px;
+		overflow: hidden;
+	}
+	.date {
+		color: #6f6e6e;
+		margin-bottom: 18px;
+	}
+	.text {
+		color: $text-color;
+		margin-top:40px;
+	}
+	.link {
+		margin-top: 10px;
+		float:right;
+		position: relative;
+		z-index: 999999;
+	}
+}
 .article-main {
 	@extend %content-bg;
 	padding-bottom: 60px;
