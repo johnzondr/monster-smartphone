@@ -1,0 +1,28 @@
+<div class="container main">
+	<div class="leaf-overlay-top center-block">
+		<%=image_tag 'leaf-top.png' %>
+	</div>
+	<div class="article-main">
+		<div class="row">
+			<div class="col-md-9 col-md-offset-2">
+				<h2><%= @extra.title %></h2>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="date">
+					<b><%= @extra.created_at.strftime("%b %e") %></b>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="text">
+					<p><%= @extra.text.gsub(/\n/, '<br/>').html_safe %><p>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="leaf-overlay-bottom center-block">
+		<%=image_tag 'leaf-bottom.png' %>
+	</div>
+
+</div>

@@ -301,3 +301,31 @@ a:hover {
 	text-decoration: none;
 }
 
+
+$date-font: 'taranisregular', serif;
+
+
+.article-main .date {
+	font-family: $date-font;
+	color: #99A6C1;
+	background: url('date-bg.png') no-repeat;
+	height: 50px;
+	width: 113px;
+	text-align: center;
+	padding-top: 13px;
+	margin: 0 0 0 25px;
+	font-size: 13px;
+}
+
+.article-main .text, .article-main .date {
+	position: relative;
+	z-index: 99999;
+}
+.article-main h2{
+	margin-bottom: 40px;
+	color: #ADC7FF;
+}
+
+.article-main .text b {
+	color: #A04ED0;
+}

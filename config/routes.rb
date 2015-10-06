@@ -2,11 +2,13 @@ Scalemail::Application.routes.draw do
 
 	#Casein routes
 	namespace :casein do
+		resources :extras
 		resources :articles
 	end
 
   root 'articles#index'
   resources :articles, :only => :show
+  resources :extras, :only => :show
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
