@@ -1,7 +1,21 @@
 <div class="container">
+	<% if @homeimage  %>
+		<% if @homeimage.link_url.length > 5 %>
+			<% link = @homeimage.link_url %>
+		<% else %>
+			<% link = "#" %>
+		<% end %>
+		<a href="<%= link %>">
+			<div class="hero-wrapper">
+				<%= image_tag "#{@homeimage.photo_url}", class: 'center-block' %>
+			</div>
+		</a>
+	<% else %>
+
 	<div class="hero-wrapper">
 			<%= image_tag 'hero/hero.png', class: 'center-block' %>
 	</div>
+	<% end %>
 </div>
 
 <div class="container main">

@@ -2,6 +2,7 @@ Scalemail::Application.routes.draw do
 
 	#Casein routes
 	namespace :casein do
+		resources :home_images
 		resources :extras
 		resources :articles
 	end
